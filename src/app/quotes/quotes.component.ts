@@ -16,9 +16,9 @@ export class QuotesComponent implements OnInit {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
 
-  completeQuote(isComplete,index){
-    if (isComplete){
-        this.quotes.splice(index,1);
+  completeQuote(isComplete, index) {
+    if (isComplete) {
+        this.quotes.splice(index, 1);
         }
         }
    constructor() { }
