@@ -15,6 +15,7 @@ export class QuotesComponent implements OnInit {
   toogleDetails(index) {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
+  
 
   completeQuotes(isComplete, index) {
     if (isComplete) {

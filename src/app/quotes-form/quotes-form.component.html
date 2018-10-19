@@ -1,26 +1,41 @@
+
+
 <div class="container-fluid">
-  <div class="row">
+    <div class="row">
       <form (ngSubmit)='submitQuotes()' #quoteForm='ngForm'>
-          <div class="form-group">
-
-              <label for="name">Name</label>
-              <input type="text" required class="form-control" id="name" [(ngModel)]="newQuotes.name" name="name">
-           
-              <!-- Display {{newQuotes.name}} -->
-
+        <div class="form-group">
+   
+          <label for="name">QUOTE</label>
+          <input type="text" required class="form-control" id="name" [(ngModel)]="newQuotes.name" name="name" #name="ngModel" required>
+   
+          <!-- Display {{newQuotes.name}} -->
+                      <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                        <p>Name is Required</p>
+   
+                      </div>
+   
+        </div>
+        <div class="form-group">
+   
+          <label for="description">AUTTHORS NAME</label>
+   
+          <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuotes.description" name="description" #description="ngModel" required></textarea>
+            <div [(hidden)]="description.valid || name.pristine" class="alert alert-danger">
+              <p>description is requiered</p>
+   
+             </div>
+   
+        </div>
+        <div class="form-group">
+          <label for="complete">COMPLETE:</label>
+          <input type="date" id="complete" [(ngModel)]="newQuotes.completeDate" name="completeDate" #completeDate="ngModel" required>
+          <div  [(hidden)]="completeDate.valid || name.pristine" class="alert alert-danger">
+            <p>complete the date</p>
+   
           </div>
-          <div class="form-group">
-
-              <label for="description">Description</label>
-              <textarea class="form-control" id="description" rows="4" required></textarea>
-              
-          </div>
-          <div class="form-group">
-              <label for="complete">Completion</label>
-              <input type='date' id="complete" required>
-              
-          </div>
-          <button type="submit" class="btn btn-success btn-lg">Add quote</button>
+        </div>
+        <button type="submit" class="btn btn-info btn-lg" name="button">ADD QUOTE</button>
       </form>
-  </div>
-</div>
+    </div>
+   </div>
+   

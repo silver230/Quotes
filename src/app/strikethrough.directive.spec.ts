@@ -5,4 +5,4 @@ describe('StrikethroughDirective', () => {
     const directive = new StrikethroughDirective();
     expect(directive).toBeTruthy();
   });
-});
+}); 
