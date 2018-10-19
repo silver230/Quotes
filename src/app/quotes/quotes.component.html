@@ -1,0 +1,11 @@
+<!-- <p>
+  {{quotes.id}}
+</p> -->
+<img src="src/assets/image.jpeg">
+ 
+<div *ngFor='let quote of quotes;let i = index'>
+  <li >{{quote.name}}</li>
+  <button  (click)='toogleDetails(i)'>AUTHOR</button>
+  <app-quotes-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quotes-details>
+  </div>
+
