@@ -13,7 +13,7 @@
 <div *ngFor='let quote of quotes;let i = index'>
   <p  id="{{i}}" appStrikethrough>{{quote.name}} writteen on {{quote.completeDate|date}}</p>
 
-  <button  (click)='toogleDetails(i)'>AUTHOR</button>
+  <button  (click)='toogleDetails(i)' class="btn btn-success">AUTHOR</button>
   <app-quotes-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuotes($event,i)'></app-quotes-details>
   </div>
 
