@@ -8,10 +8,10 @@
       <app-quotes-form (addQuotes)="addNewQuotes($event)"></app-quotes-form>
   </div>
 
-<img src="src/assets/image.jpeg">
+<!-- <img src="src/assets/image.jpeg"> -->
  
 <div *ngFor='let quote of quotes;let i = index'>
-  <li  id="{{i}}" appStrikethrough>{{quote.name}} due on {{quote.completeDate|date}}</li>
+  <p  id="{{i}}" appStrikethrough>{{quote.name}} writteen on {{quote.completeDate|date}}</p>
 
   <button  (click)='toogleDetails(i)'>AUTHOR</button>
   <app-quotes-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuotes($event,i)'></app-quotes-details>

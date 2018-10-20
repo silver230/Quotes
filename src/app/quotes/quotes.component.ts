@@ -22,6 +22,7 @@ export class QuotesComponent implements OnInit {
         this.quotes.splice(index, 1);
         }
         }
+         
 
         addNewQuotes(quote){
           let quotesLength = this.quotes.length;

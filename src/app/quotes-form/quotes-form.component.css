@@ -1,0 +1,10 @@
+ .container-fluid{
+     padding-bottom:50%; 
+     box-align:center;
+     float:right;
+     box-shadow: 0.2ch solid grey;
+     
+ }
+ .quote{
+     background-color: black;
+ }
