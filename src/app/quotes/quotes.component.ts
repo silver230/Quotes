@@ -8,9 +8,9 @@ import {Quotes} from '../quotes';
 })
 export class QuotesComponent implements OnInit {
   quotes = [
-    new Quotes( 1, 'A hungry man,is a, hungry man', 'bill',new Date(2018,3,14)),
-    new Quotes( 1, 'A hungry man,is a, hungry man', 'bill',new Date(2018,3,14)),
-    new Quotes( 1, 'A hungry man,is a, hungry man', 'bill',new Date(2018,3,14))
+    new Quotes( 1, 'A hungry man is a hungry man', 'bob marley',new Date(2018,3,14)),
+    new Quotes( 1, 'The most intelligent person is  one who knows nothing', 'unknown',new Date("")),
+     
   ];
   toogleDetails(index) {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
