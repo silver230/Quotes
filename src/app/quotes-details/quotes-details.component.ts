@@ -8,8 +8,8 @@ import {Quotes} from '../quotes';
 })
 export class QuotesDetailsComponent implements OnInit {
   quotes = [
-    new Quotes( 1, 'A hungry man is a hungry man', 'bob marley', new Date(2018, 3, 14)),
-    new Quotes( 1, 'The most intelligent person is  one who knows nothing', 'unknown', new Date('')),
+    new Quotes( 'A hungry man is a hungry man', 'bob marley', new Date(2018, 3, 14)),
+    new Quotes( 'The most intelligent person is  one who knows nothing', 'unknown', new Date('')),
   ];
 
   @Input() quote: Quotes;
