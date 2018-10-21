@@ -1,10 +1,15 @@
  .container-fluid{
-     padding-bottom:50%; 
+     padding-bottom:10%; 
      box-align:center;
-     float:right;
-     box-shadow: 0.2ch solid grey;
+     text-align: center;
+     /* box-shadow: 0.2ch solid grey; */
+     color:red;
+     
      
  }
  .quote{
-     background-color: black;
+     float:right;
  }
+ .body{
+    float:right;
+}

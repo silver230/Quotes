@@ -1,5 +1,10 @@
-<p class="text-info">{{quote.description}}</p>
-<p class="text-warning">{{quote.completeDate|dateCount}} days complete</p>
-<button class="text-danger"
-(click) = 'quoteComplete(true)'> Delete </button>
- 
+<form class="body">
+        <div >
+                <p class="text-info">{{quote.description}}</p>
+            <p class="text-warning">{{quote.completeDate|dateCount}} days complete</p>
+            <button class="text-danger"
+            (click) = 'quoteComplete(true)'> Delete </button>
+             
+            </div>
+</form>
+
