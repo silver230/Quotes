@@ -20,5 +20,9 @@
   <button  (click)='toogleDetails(i)' class="btn btn-success" > <img src="src/assets/image.jpeg">
     AUTHOR</button>
   <app-quotes-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuotes($event,i)'></app-quotes-details>
+  <div class="row">
+    <button (click)="upvote(i)" class="btn btn-success">upvote:{{quote.upvotes}}</button>
+    <button (click)="downvote(i)" class="btn btn-danger">downvote:{{quote.downvotes}}</button>
+  </div>
   </div>
 

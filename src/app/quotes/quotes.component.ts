@@ -8,8 +8,8 @@ import {Quotes} from '../quotes';
 })
 export class QuotesComponent implements OnInit {
   quotes = [
-    new Quotes( 'A hungry man is a hungry man', 'bob marley', new Date(2018, 3, 14)),
-    new Quotes( 'The most intelligent person is  one who knows nothing', 'unknown', new Date('')),
+    new Quotes( 1, 'A hungry man is a hungry man', 'bob marley', new Date(2018, 3, 14) ),
+    new Quotes(2, 'The most intelligent person is  one who knows nothing', 'unknown', new Date('')),
   ];
   toogleDetails(index) {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
@@ -26,8 +26,15 @@ export class QuotesComponent implements OnInit {
           const quotesLength = this.quotes.length;
           quote.id = quotesLength + 1;
           quote.completeDate = new Date(quote.completeDate);
-          this.quotes.push(quote); }
-   constructor() { }
+          this.quotes.push(quote); 
+        }
+        upvote(id) {
+          this.quotes[id].upvotes += 1;
+        }
+        downvote(id) {
+          this.quotes[id].downvotes += 1;
+        }
+   constructor() {}
 
   ngOnInit() {
   }

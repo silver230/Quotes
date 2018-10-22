@@ -1,5 +1,7 @@
 # Quotes
 
+### its an app for a user to generate quote in that she or he can view the quotes showing also the number of votes he/she has
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
 
 ## Development server
