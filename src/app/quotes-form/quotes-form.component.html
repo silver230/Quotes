@@ -11,7 +11,7 @@
 	 
 					<!-- Display {{newQuotes.name}} -->
 											<div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-												<p>Name is Required</p>
+												<p>Quote is Required</p>
 	 
 											</div>
 	 
@@ -22,7 +22,7 @@
 	 
 					<input class="form-control" id="description" rows="4" [(ngModel)]="newQuotes.description" name="description" #description="ngModel" required>
 						<div [(hidden)]="name.valid || name.pristine" class="alert alert-danger">
-							<p>description is requiered</p>
+							<p>Name is requiered</p>
 	 
 						 </div>
 	 
@@ -31,7 +31,7 @@
 					<label for="complete"> Date: </label>
 					<input type="date" id="complete" [(ngModel)]="newQuotes.completeDate" name="completeDate" #completeDate="ngModel" required>
 					<div  [(hidden)]="name.valid || name.pristine" class="alert alert-danger">
-						<p>complete the date</p>
+						<p>please fill in the date</p>
 	
 					</div>
 				</div> 
